@@ -8,11 +8,12 @@ import { ApodService } from '../services/apod.service';
 })
 export class NasaComponent implements OnInit {
 
+  data: any;
+
   constructor(private apodService: ApodService) {
-    console.log('Im workin');
 
     this.apodService.getData().subscribe((data) => {
-      console.log(data);
+      this.data = data;
     });
   }
 
