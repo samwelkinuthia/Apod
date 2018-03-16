@@ -10,6 +10,10 @@ export class NasaComponent implements OnInit {
 
   constructor(private apodService: ApodService) {
     console.log('Im workin');
+
+    this.apodService.getData().subscribe((data) => {
+      console.log(data);
+    });
   }
 
   ngOnInit() {
