@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { NasaComponent } from './nasa/nasa.component';
+import {ApodService} from './services/apod.service';
 
 
 @NgModule({
@@ -15,7 +16,7 @@ import { NasaComponent } from './nasa/nasa.component';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ApodService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
