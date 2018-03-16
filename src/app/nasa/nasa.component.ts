@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApodService } from '../services/apod.service';
 
 @Component({
   selector: 'app-nasa',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NasaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private apodService: ApodService) {
+    console.log('Im workin');
+  }
 
   ngOnInit() {
   }
