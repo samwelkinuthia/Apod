@@ -12,7 +12,8 @@ import { NasaComponent } from './nasa/nasa.component';
     NasaComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
