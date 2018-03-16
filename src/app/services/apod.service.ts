@@ -4,6 +4,6 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class ApodService {
 
-  constructor() { }
-
+  constructor(private http: HttpClient) {
+  }
 }
