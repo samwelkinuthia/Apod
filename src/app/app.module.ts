@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { NasaComponent } from './nasa/nasa.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NasaComponent
   ],
   imports: [
     BrowserModule
