@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./fonts/style.css";
+
+body {
+  overflow-x: hidden;
+  font-family: 'garamond i';
+  background-image: url("http://wallpaperget.com/images/light-grey-background-wallpaper-20.jpg");
+}
