@@ -20,7 +20,6 @@
 
 
 .image {
-  height:100%;
   margin:0;
   padding:0;
 }
@@ -29,4 +28,13 @@
   padding:0;
   height:100%;
   max-width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  .space_image {
+    height:auto;
+    padding:5px;
+    margin-top:1em;
+    max-width:100%;
+  }
 }
