@@ -1,27 +1,66 @@
 # Apod
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
+An Angular web application that showcases the astronomical picture(or occasionally video) of the day using the [Nasa Apod](https://api.nasa.gov/api.html#apod) API.
 
-## Development server
+The image/Video is accompanied by a title and description of the image.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## How It works
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+The app fetches the Picture of the Day and it's details from Nasa through JSON which is then rendered to the page.
 
-## Build
+An example JSON response contains the details below.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+```
+{
+  "copyright": "Jeff Dai", 
+  "date": "2017-12-22", 
+  "explanation": "From dark skies above Heilongjiang province in northeastern China, meteors rain down on a wintry landscape in this beautiful composited night scene. The 48 meteors are part of last week's annual Geminid meteor shower. Despite temperatures of -28 degrees C, all were recorded in camera exposures made during the peak hour of the celestial spectacle. They stream away from the shower's radiant high above the horizon near the two bright stars of the zodiacal constellation of the Twins. A very active shower, this year the December 13-14 peak of the Geminids arrived just before the December 16 closest approach of asteroid 3200 Phaethon to planet Earth. Mysterious 3200 Phaethon is the Geminid shower's likely parent body.", 
+  "hdurl": "https://apod.nasa.gov/apod/image/1712/GeminidMeteorShowerOverChina-Dai1500.jpg", 
+  "media_type": "image", 
+  "service_version": "v1", 
+  "title": "Gemini's Meteors", 
+  "url": "https://apod.nasa.gov/apod/image/1712/GeminidMeteorShowerOverChina-Dai1024.jpg"
+}
 
-## Running unit tests
+```
+The response renders the details to the page as shown below.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Site Image](./src/assets/site.png)
 
-## Running end-to-end tests
+## Make it your own
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Further help
+### Prerequisites
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Ensure you have the following installed in your machine.
+
+* Angular Cli - Installation notes and guides can be found [Here](https://cli.angular.io/)
+
+* Node Js - Installation notes and guides can be found [Here](https://nodejs.org/en/)
+
+### Installing
+
+* Clone/Download this repository.
+
+* Navigate to the directory e.g.```cd/Downloads/Apod```
+
+* Run ```npm install``` to install gems.
+
+
+* Run ```ng serve``` to start the app and navigate to [https://localhost:4200]()
+
+* Enjoy !
+
+## Technologies Used
+
+* [Angular Js](https://angular.io/)
+* [NASA APOD api](https://github.com/nasa/apod-api) - Provides image data daily.
+* [Bootstrap](https://getbootstrap.com/)
+
+
+## Author
+
+[Kinuthia Samwel](http://samwelkinuthia.github.io)
+
