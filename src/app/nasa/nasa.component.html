@@ -1,7 +1,17 @@
-<div *ngIf="data">
-  <h5>{{data.title}}</h5>
-  <p>{{data.copyright}}</p>
-  <p>{{data.date}}</p>
-  <p>{{data.explanation}}</p>
-  <img [src]="data.url" alt="">
-</div>
+<section class="container-fluid">
+  <div class="row main" *ngIf="data">
+    <div class="col-md-4 col-sm-12 col-xs-12 det">
+      <div class="details">
+        <h2>{{data.title}}</h2>
+        <p>{{data.copyright}}</p>
+        <span class="date" [innerHTML]="data.date"></span>
+        <br> <br>
+        <span class="explanation" [innerHTML]="data.explanation"></span>
+      </div>
+    </div>
+    <div class="col-md-8 col-sm-12 col-xs-12 image">
+      <img [src]="data.url" alt="" class="space_image img-responsive">
+    </div>
+  </div>
+</section>
+
