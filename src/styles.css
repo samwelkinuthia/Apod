@@ -5,5 +5,6 @@
 body {
   overflow-x: hidden;
   font-family: 'garamond i';
-  background-image: url("http://wallpaperget.com/images/light-grey-background-wallpaper-20.jpg");
+  background: linear-gradient(to right,  #ccffff
+ ,   #00cccc);
 }
