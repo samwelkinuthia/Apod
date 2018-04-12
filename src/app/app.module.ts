@@ -17,7 +17,7 @@ import {ApodService} from './services/apod.service';
   imports: [
     BrowserModule,
     HttpClientModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production})
+    environment.production ? ServiceWorkerModule.register('ngsw-worker.js') : []
   ],
   providers: [ApodService],
   bootstrap: [AppComponent]
