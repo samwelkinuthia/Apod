@@ -33,8 +33,8 @@
 @media only screen and (max-width: 1000px) {
   .space_image {
     height:auto;
-    padding:5px;
-    margin-top:1em;
+    padding:0;
+    margin: 0;
     max-width:100%;
   }
 }
