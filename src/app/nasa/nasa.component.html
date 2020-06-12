@@ -1,18 +1,16 @@
-<section class="container-fluid">
-  <div class="row main" *ngIf="data">
-    <div class="col-md-8 col-sm-12 col-xs-12 image">
-      <img [src]="data.url" alt="" class="space_image img-responsive">
+<section class="container" *ngIf="data">
+    <div class="row heading">
+      <h2>{{data.title}}</h2>
+      <p>{{data.date}}</p>
+      <p>{{data.copyright}}</p>
     </div>
-    <div class="col-md-4 col-sm-12 col-xs-12 det">
-      <div class="details">
-        <h2>{{data.title}}</h2>
-        <p>{{data.copyright}}</p>
-        <span class="date" [innerHTML]="data.date"></span>
-        <br> <br>
-        <span class="explanation" [innerHTML]="data.explanation"></span>
-        <br>
-        <span class="full-image"><a [href]="data.hdurl">View HD</a></span>
+  <div class="row photo">
+      <div class="col-md-6 col-xs-12">
+      <img [src]="data.url" alt="" id="image" class="space_image img-responsive">
+      </div>
+      <div class="col-md-6 col-xs-12 desc">
+        <p class="explanation" [innerHTML]="data.explanation"></p>
+        <button class="full-image"><a [href]="data.hdurl">View HD</a></button>
       </div>
     </div>
-  </div>
 </section>
