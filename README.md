@@ -46,21 +46,13 @@ Ensure you have the following installed in your machine.
 
 * Navigate to the directory e.g.```cd/Downloads/Apod```
 
-* Run ```npm install``` to install gems.
+* Run ```npm install``` to install modules.
 
 
 * Run ```ng serve``` to start the app and navigate to [https://localhost:4200]()
-
-* Enjoy !
 
 ## Technologies Used
 
 * [Angular Js](https://angular.io/)
 * [NASA APOD api](https://github.com/nasa/apod-api) - Provides image data daily.
 * [Bootstrap](https://getbootstrap.com/)
-
-
-## Author
-
-[Kinuthia Samwel](http://samwelkinuthia.github.io)
-
