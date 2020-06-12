@@ -5,6 +5,5 @@
 body {
   overflow-x: hidden;
   font-family: 'garamond i';
-  background: linear-gradient(to right,  #ccffff
- ,   #00cccc);
+  /*background-color:  #cce0ff;*/
 }
