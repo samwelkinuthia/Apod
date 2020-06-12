@@ -22,7 +22,7 @@
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
     "@angular/service-worker": "^5.2.9",
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "core-js": "^2.4.1",
     "medium-zoom": "^1.0.5",
     "ng-pwa-tools": "0.0.15",
